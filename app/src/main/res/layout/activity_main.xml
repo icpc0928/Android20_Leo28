@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
+    android:id="@+id/rootView"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -52,7 +53,62 @@
         android:layout_marginVertical="10dp"
         />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="15dp"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:text="Time"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:id="@+id/timePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+
+            android:onClick="test2"
+            android:text="select"
+            />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/timePicker"
+
+            android:layout_alignTop="@id/timePicker"
+            android:layout_alignParentLeft="true"
+            android:layout_alignBottom="@id/timePicker"
+            android:textSize="24sp"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        android:layout_marginVertical="10dp"
+        />
 
 
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="test3"
+    android:text="ShowToast"
+    />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="test4"
+        android:text="snackBar"
+        />
 
 </LinearLayout>
